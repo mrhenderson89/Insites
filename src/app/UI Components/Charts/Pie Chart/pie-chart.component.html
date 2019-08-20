@@ -1,0 +1,20 @@
+<div class="btn-group" role="group" aria-label="Timespan">
+    <button mdbBtn type="button" color="primary" class="waves-light" (click)="updateChartData('PT1H', 'PT3H')" mdbWavesEffect>1 hour</button>
+    <button mdbBtn type="button" color="primary" class="waves-light" (click)="updateChartData('PT24H', 'PT3H')" mdbWavesEffect>24 Hours</button>
+    <button mdbBtn type="button" color="primary" class="waves-light" (click)="updateChartData('P7D', 'P1D')" mdbWavesEffect>7 Days</button>
+    <button mdbBtn type="button" color="primary" class="waves-light" (click)="updateChartData('P28D', 'P1D')" mdbWavesEffect>28 Days</button>
+</div>
+<div style="display: block" *ngIf="chartDatasets.length">
+    <canvas mdbChart
+        height = "height"
+        width = "width"
+        [chartType]="chartType"
+        [datasets]="chartDatasets"
+        [labels]="chartLabels"
+        [colors]="chartColors"
+        [options]="chartOptions"
+        [legend]="true"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+    </canvas>
+  </div>

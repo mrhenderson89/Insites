@@ -1,0 +1,8 @@
+<mat-card [ngSwitch]="chart.type" [style.width.px]="chart.chartWidth" [style.height.px]="chart.chartHeight" [style.background-color]="chart.isDefaultChartColour(chart.chartColour) ? '' : chart.chartColour">
+    <line-chart *ngSwitchCase="ChartType.Line" [chart]="chart" (click)="chart.onSelect"></line-chart>
+    <bar-chart *ngSwitchCase="ChartType.Bar" [chart]="chart" (click)="chart.onSelect"></bar-chart>
+    <pie-chart *ngSwitchCase="ChartType.Pie" [chart]="chart" (click)="chart.onSelect"></pie-chart>
+    <!-- <app-line-chart *ngSwitchCase="ChartType.Pie" [chart]="chart" (click)="chart.onSelect"></app-line-chart>
+    <app-line-chart *ngSwitchCase="ChartType.Bar" [chart]="chart" (click)="chart.onSelect"></app-line-chart> -->
+    <div *ngSwitchDefault="">Unexpected type '{{chart.type}}'</div>
+</mat-card>

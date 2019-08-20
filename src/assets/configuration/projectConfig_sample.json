@@ -1,0 +1,95 @@
+{
+    "pages": [
+        {
+            "index": 0,
+            "name": "Page 1",
+            "icon": "",
+            "charts": [
+                {
+                    "type": "Line",
+                    "name": "Average request duration",
+                    "sixeX": 400,
+                    "sizeY": 200,
+                    "telemetryType": "metrics",
+                    "requestType": "requests/duration",
+                    "timespan": "P1D",
+                    "interval": "PT1H",
+                    "aggregation": "avg",
+                    "segment": "request/urlPath"
+                },
+                {
+                    "type": "Bar",
+                    "name": "Request count",
+                    "sixeX": 400,
+                    "sizeY": 600,
+                    "telemetryType": "metrics",
+                    "requestType": "requests/count",
+                    "timespan": "P7D",
+                    "interval": "PT1H",
+                    "aggregation": "sum",
+                    "segment": "request/name"
+                },
+                {
+                    "type": "Pie",
+                    "name": "Request count",
+                    "sixeX": 400,
+                    "sizeY": 600,
+                    "telemetryType": "metrics",
+                    "requestType": "requests/count",
+                    "timespan": "P7D",
+                    "interval": "PT1D",
+                    "aggregation": "sum",
+                    "segment": "request/name"
+                },
+                {
+                    "type": "Pie",
+                    "name": "Request count",
+                    "sixeX": 400,
+                    "sizeY": 600,
+                    "telemetryType": "metrics",
+                    "requestType": "requests/count",
+                    "timespan": "P7D",
+                    "interval": "PT1D",
+                    "aggregation": "avg",
+                    "segment": "request/name"
+                },
+                {
+                    "type": "Pie",
+                    "name": "Request count",
+                    "sixeX": 400,
+                    "sizeY": 600,
+                    "telemetryType": "metrics",
+                    "requestType": "requests/count",
+                    "timespan": "P7D",
+                    "interval": "PT1D",
+                    "aggregation": "count",
+                    "segment": "request/name"
+                },
+                {
+                    "type": "Pie",
+                    "name": "Request count",
+                    "sixeX": 400,
+                    "sizeY": 600,
+                    "telemetryType": "metrics",
+                    "requestType": "requests/count",
+                    "timespan": "P7D",
+                    "interval": "PT1D",
+                    "aggregation": "min",
+                    "segment": "request/name"
+                },
+                {
+                    "type": "Pie",
+                    "name": "Request count",
+                    "sixeX": 400,
+                    "sizeY": 600,
+                    "telemetryType": "metrics",
+                    "requestType": "requests/count",
+                    "timespan": "P7D",
+                    "interval": "PT1D",
+                    "aggregation": "max",
+                    "segment": "request/name"
+                }
+            ]
+        }
+    ]
+}
