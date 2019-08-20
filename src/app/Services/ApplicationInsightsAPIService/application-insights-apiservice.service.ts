@@ -3,12 +3,12 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Observable} from 'rxjs';
 import { map } from 'rxjs/operators';
 
-const requestDurationEndpoint = 'https://api.applicationinsights.io/v1/apps/XXXXXXXXXXXXXXXXXXXXXXX/metrics/requests/duration?timespan=P7D&interval=PT1H&aggregation=avg&segment=request%2FurlPath';
+const requestDurationEndpoint = 'https://api.applicationinsights.io/v1/apps/XXXXXXXXXXXXXXXXXXXXXXXXXXX/metrics/requests/duration?timespan=P7D&interval=PT1H&aggregation=avg&segment=request%2FurlPath';
 const apiDomain = 'https://api.applicationinsights.io/v1/apps/';
-const instrumentationKey = 'XXXXXXXXXXXXXXXXXXXXXXX';
+const instrumentationKey = 'XXXXXXXXXXXXXXXXXXXXXXXXXXX';
 const httpOptions = {
   headers: new HttpHeaders({
-    'x-api-key': 'XXXXXXXXXXXXXXXXXXXXXXX'
+    'x-api-key': 'XXXXXXXXXXXXXXXXXXXXXXXXXXX'
   })
 };
 
